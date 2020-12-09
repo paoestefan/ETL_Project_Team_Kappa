@@ -1,0 +1,23 @@
+SELECT "Title","StreamPL","IMDb" FROM "Movies"
+WHERE "StreamPL"='N'
+UNION
+SELECT "Title","StreamPL","IMDb" FROM "Series"
+WHERE "StreamPL"='N';
+
+SELECT "Title","StreamPL","IMDb" FROM "Movies"
+WHERE "StreamPL"='D'
+UNION
+SELECT "Title","StreamPL","IMDb" FROM "Series"
+WHERE "StreamPL"='D';
+
+SELECT "Title","StreamPL","IMDb" FROM "Movies"
+WHERE "StreamPL"='P'
+UNION
+SELECT "Title","StreamPL","IMDb" FROM "Series"
+WHERE "StreamPL"='P';
+
+SELECT "Title","StreamPL","IMDb" FROM "Movies"
+WHERE "StreamPL"='H'
+UNION
+SELECT "Title","StreamPL","IMDb" FROM "Series"
+WHERE "StreamPL"='H';
